@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+
+body {
+    background-image: url(background2.jpg);
+    font: 16px/28px arial, sans-serif;
+    color: #333;
+}
+
+.container{
+    width: 960px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    border-left: 0;
+}
+
+
+.header ul li a {
+    text-decoration: none;
+    color: salmon;
+    padding: 10px 10px 10px 10px;
+}
+
+.header ul li:hover {
+    background: lightskyblue;
+    border-radius: 20px;
+}
+
+.header a:hover{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.image{
+    height: 350px;
+    background-size: cover;
+    background-image: url(background.jpg);
+    background-position: 0 -180px;
+    border-top: 5px solid coral;
+    border-bottom: 5px solid coral;
+}
+
+.main {
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main a {
+    text-decoration: none;
+    color: salmon;
+}
+
+/* .main a:hover {
+    text-decoration: none;
+    color: salmon;
+} */
+
+
+.main h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main .penulis{
+    font-size: 11px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.penulis a:hover{
+    text-decoration: dotted;
+    background-color: gold;
+    color: black;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.main p{
+    margin-top: 20px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.sidebar{
+    float: right;
+    width: 300px;
+    padding: 20px;
+ }
+ 
+ .sidebar img{
+     width: 70px;
+     float: left;
+     margin: 0 10px 0 0;
+ }
+ 
+ .sidebar p{
+     font: 12px/18px arial;
+     text-align: justify;
+ }
+.footer{
+    background-color: #333;
+}
+
+.footer .copyright{
+    color: wheat;
+    text-align: center;
+    font-size: 12px;
+}
